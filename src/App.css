@@ -1,21 +1,21 @@
 #root {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 8em;
+  padding: 2em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 1em #ff7f50aa); /* Sombra naranja al hacer hover */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 1em #87ceebaa); /* Sombra azul al hacer hover */
 }
 
 @keyframes logo-spin {
@@ -29,14 +29,18 @@
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 10s linear; /* Cambio de duración de la animación */
   }
 }
 
 .card {
   padding: 2em;
+  border-radius: 10px; /* Agregando bordes redondeados */
+  background-color: #f0f0f0; /* Cambiando el color de fondo */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  margin-bottom: 2rem; /* Agregando margen inferior */
 }
 
 .read-the-docs {
-  color: #888;
+  color: #555; /* Cambiando el color del texto a gris más oscuro */
 }

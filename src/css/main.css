@@ -1,105 +1,68 @@
 /* Estilos para los elementos div */
 div {
   text-align: center;
-  background-color: #e6ccff; /* Morado claro */
-  font-family: 'Comic Sans MS', cursive; /* Fuente más divertida */
-  padding: 30px; /* Añade más espacio interno */
-  border-radius: 30px; /* Bordes redondeados */
-  box-shadow: 0 0 20px rgba(106, 13, 173, 0.3); /* Sombra suave */
-  animation: bounce 2s infinite alternate; /* Animación de rebote */
+  background-color: #ffe6b3; /* Amarillo claro */
+  font-family: Arial, sans-serif; /* Fuente más clásica */
+  padding: 20px; /* Añade espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.3); /* Sombra suave */
 }
 
 /* Estilos para el encabezado h1 */
 h1 {
-  font-size: 4rem; /* Tamaño de fuente más grande */
-  color: #ff4dff; /* Morado oscuro */
+  font-size: 3.5rem; /* Tamaño de fuente grande */
+  color: #ff8c00; /* Naranja oscuro */
   text-transform: uppercase;
-  letter-spacing: 4px; /* Espaciado entre letras */
-  margin-bottom: 40px; /* Añade más espacio inferior */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  margin-bottom: 30px; /* Añade espacio inferior */
 }
 
 /* Estilos para el encabezado h2 */
 h2 {
-  font-size: 3rem; /* Tamaño de fuente grande */
-  color: #6600cc; /* Morado medio */
-  margin-bottom: 30px; /* Añade espacio inferior */
+  font-size: 2.5rem; /* Tamaño de fuente mediano */
+  color: #ff4500; /* Naranja medio */
+  margin-bottom: 20px; /* Añade espacio inferior */
 }
 
 /* Estilos para las imágenes */
 img {
-  margin-top: 30px;
-  border-radius: 50%; /* Haz la imagen redonda */
-  border: 5px solid #663399; /* Borde alrededor de la imagen */
-  box-shadow: 0 0 30px rgba(138, 43, 226, 0.5); /* Sombra más pronunciada */
-  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Transición suave con curva de Bezier */
+  margin-top: 20px;
+  border-radius: 10px; /* Haz la imagen con bordes redondeados */
+  border: 3px solid #ffa500; /* Borde naranja */
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); /* Sombra suave */
+  transition: transform 0.4s ease; /* Transición suave */
 }
 
 /* Efecto de zoom al hacer hover sobre las imágenes */
 img:hover {
-  transform: scale(1.1); /* Efecto de escala al hacer hover */
-}
-
-/* Efecto de borde resplandeciente al hacer hover sobre las imágenes */
-img:hover:before {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  right: -7px;
-  bottom: -7px;
-  border-radius: 50%;
-  border: 2px solid #9933ff; /* Borde resplandeciente */
-  animation: pulsate 1.2s ease-out infinite; /* Animación pulsante */
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(0.95);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.2);
-    opacity: 0;
-  }
-}
-
-/* Animación de rebote */
-@keyframes bounce {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(20px);
-  }
+  transform: scale(1.05); /* Efecto de escala al hacer hover */
 }
 
 /* Estilos para los botones */
 .button {
   display: inline-block;
-  padding: 15px 30px;
-  margin: 20px;
-  font-size: 1.5rem;
+  padding: 12px 24px;
+  margin: 15px;
+  font-size: 1.3rem; /* Tamaño de fuente mediano */
   font-weight: bold;
   text-transform: uppercase;
-  border: 3px solid #6600cc; /* Morado medio */
-  border-radius: 10px;
+  border: 3px solid #ff4500; /* Naranja medio */
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #ff4dff; /* Morado oscuro */
+  background-color: #ff6347; /* Rojo coral */
   color: #fff; /* Texto blanco */
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 /* Estilos para el botón hover */
 .button:hover {
-  background-color: #9933ff; /* Morado medio */
-  color: #fff; /* Texto blanco */
-  border-color: #9933ff; /* Morado medio */
+  background-color: #ff4500; /* Naranja medio */
+  border-color: #ff4500; /* Naranja medio */
 }
 
 /* Estilos para los párrafos */
 p {
-  font-size: 1.2rem; /* Tamaño de fuente mediano */
-  color: #6600cc; /* Morado medio */
-  margin-bottom: 20px; /* Añade espacio inferior */
+  font-size: 1.1rem; /* Tamaño de fuente pequeño */
+  color: #ff6347; /* Rojo coral */
+  margin-bottom: 15px; /* Añade espacio inferior */
 }
-
