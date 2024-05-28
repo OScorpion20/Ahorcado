@@ -66,3 +66,15 @@ p {
   color: #ff6347; /* Rojo coral */
   margin-bottom: 15px; /* Añade espacio inferior */
 }
+
+/* styles.css */
+.hangman-image {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hangman-hidden {
+  opacity: 0;
+}
+

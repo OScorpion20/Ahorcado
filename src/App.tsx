@@ -1,4 +1,3 @@
-// App.tsx
 import { useState } from "react";
 import Hangman from "./components/Hangman";
 import Welcome from "./components/Welcome";
@@ -49,11 +48,13 @@ const wordCategories = {
   }
 };
 
+type CategoryKeys = keyof typeof wordCategories;
+
 function App() {
-  const [currentCategory, setCurrentCategory] = useState<string | null>(null);
+  const [currentCategory, setCurrentCategory] = useState<CategoryKeys | null>(null);
 
   const selectRandomCategory = () => {
-    const categories = Object.keys(wordCategories);
+    const categories = Object.keys(wordCategories) as CategoryKeys[];
     const randomIndex = Math.floor(Math.random() * categories.length);
     setCurrentCategory(categories[randomIndex]);
   };
@@ -80,4 +81,3 @@ function App() {
 }
 
 export default App;
-
