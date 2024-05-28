@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 interface HangmanProps {
   words: string[];
@@ -27,7 +27,7 @@ const Hangman = ({ words, hints }: HangmanProps) => {
     return () => clearInterval(timer);
   }, []);
 
-  const displayWord = selectedWord.split('').map((letter, index) => {
+  const displayWord = selectedWord.split('').map((letter) => {
     if (guessedLetters.includes(letter)) {
       return letter;
     } else {
